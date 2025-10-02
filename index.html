@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Harbor Light Community Center</title>
+	<meta name="description" content="Centro comunitário local com serviços, eventos e programas educacionais para toda a comunidade.">
+	<style>
+		body {
+			font-family: 'Segoe UI', Arial, sans-serif;
+			background: #f7f9fc;
+			color: #143A56;
+			margin: 0;
+		}
+		header {
+			background: linear-gradient(90deg, #143A56 60%, #3A7CA5 100%);
+			color: #fff;
+			box-shadow: 0 2px 8px rgba(20,58,86,0.08);
+			padding-bottom: 0.5em;
+		}
+		.center-and-space-content {
+			text-align: center;
+			padding: 20px 10px 10px 10px;
+		}
+		.center-and-space-content img {
+			border-radius: 50%;
+			box-shadow: 0 4px 16px rgba(20,58,86,0.12);
+			border: 4px solid #fff;
+			background: #fff;
+		}
+		nav {
+			margin-top: 10px;
+		}
+		nav ul {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 2em;
+			list-style: none;
+			padding: 0;
+			justify-content: center;
+			background: rgba(20,58,86,0.08);
+			border-radius: 8px;
+		}
+		nav a {
+			color: #fff;
+			text-decoration: none;
+			font-weight: 500;
+			font-size: 1.1em;
+			padding: 8px 16px;
+			border-radius: 4px;
+			transition: background 0.2s, color 0.2s;
+		}
+		nav a:focus, nav a:hover {
+			background: #F4B942;
+			color: #143A56;
+		}
+		.banner img {
+			width: 100%;
+			height: auto;
+			display: block;
+			margin-bottom: 20px;
+			border-radius: 12px;
+		}
+		main {
+			max-width: 1000px;
+			margin: 0 auto;
+			padding: 2em 1em;
+			display: flex;
+			flex-direction: column;
+			gap: 2em;
+		}
+		section {
+			background: #fff;
+			border-radius: 16px;
+			box-shadow: 0 2px 12px rgba(20,58,86,0.07);
+			padding: 2em 1.5em;
+			margin-bottom: 0;
+		}
+		section h2 {
+			color: #143A56;
+			margin-top: 0;
+			border-left: 8px solid #F4B942;
+			padding-left: 12px;
+		}
+		section ul {
+			padding-left: 1.2em;
+		}
+		section img {
+			border-radius: 10px;
+			box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+			margin-top: 1em;
+		}
+		footer {
+			background: linear-gradient(90deg, #143A56 60%, #3A7CA5 100%);
+			color: #fff;
+			text-align: center;
+			padding: 2em 0 1em 0;
+			margin-top: 2em;
+			border-top-left-radius: 24px;
+			border-top-right-radius: 24px;
+		}
+		footer a {
+			color: #F4B942;
+			text-decoration: underline;
+		}
+		footer #contact {
+			background: rgba(20,58,86,0.12);
+			color: #fff;
+			border-radius: 12px;
+			padding: 1em 0.5em;
+			margin-bottom: 1em;
+			display: inline-block;
+			width: 90%;
+			max-width: 400px;
+		}
+		footer #contact h2, footer #contact address, footer #contact p, footer #contact a {
+			color: #fff !important;
+		}
+		address {
+			font-style: normal;
+		}
+		@media (max-width: 700px) {
+			main {
+				padding: 1em 0.2em;
+			}
+			section {
+				padding: 1em 0.5em;
+			}
+			nav ul {
+				gap: 0.5em;
+			}
+		}
+		@media (max-width: 500px) {
+			.center-and-space-content img {
+				width: 90px !important;
+				height: 90px !important;
+			}
+			section {
+				padding: 0.7em 0.2em;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="center-and-space-content">
+			<img src="logo.png" alt="Logo Harbor Light Community Center" width="140" height="140">
+			<p>Bem-vindo ao Harbor Light Community Center</p>
+		</div>
+		<nav aria-label="Navegação principal">
+			<ul>
+				<li><a href="#about">Sobre</a></li>
+				<li><a href="#services">Serviços</a></li>
+				<li><a href="#events">Eventos</a></li>
+				<li><a href="#contact">Contato</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- Banner decorativo ignorado por leitores de tela -->
+	<div class="banner">
+		<img src="https://edube.org/uploads/media/default/0001/04/decorative-banner.jpg" alt="" role="presentation" aria-hidden="true">
+	</div>
+	<main>
+		<section id="about">
+			<h2>Sobre Nós</h2>
+			<p>O Harbor Light Community Center está no coração da nossa comunidade há mais de 30 anos, oferecendo uma ampla variedade de serviços e programas para apoiar e enriquecer a vida dos moradores.</p>
+			<div style="display:flex;justify-content:center;align-items:center;margin:2em 0;">
+				<img src="centro_comunitario.png" alt="Pessoas no centro comunitário" style="max-width:90%;width:500px;height:auto;border-radius:16px;box-shadow:0 2px 12px rgba(0,0,0,0.12);">
+			</div>
+		</section>
+		<section id="services">
+			<h2>Nossos Serviços</h2>
+			<ul>
+				<li>Oficinas educacionais</li>
+				<li>Ligas esportivas</li>
+				<li>Programas de bem-estar</li>
+				<li>Aulas de arte</li>
+			</ul>
+		</section>
+		<section id="events" itemscope itemtype="http://schema.org/Event">
+			<h2>Participe dos Eventos</h2>
+			<p itemprop="description">O centro comunitário é um polo de atividades, promovendo eventos durante todo o ano. Não perca nosso festival anual de verão com diversão, comida e atrações para todas as idades.</p>
+			<p><strong>Festival Anual de Verão:</strong> <br>
+			   Início: <time itemprop="startDate" datetime="2050-07-20">20 de julho de 2050</time>
+			</p>
+		</section>
+	</main>
+	<footer>
+		<section id="contact">
+			<h2>Contato</h2>
+			<address>
+				<p>Dúvidas ou quer participar? Envie um e-mail para <a href="mailto:info@harborlight.com">info@harborlight.com</a>.</p>
+			</address>
+		</section>
+		<p>&copy; 2050 Harbor Light Community Center</p>
+	</footer>
+</body>
+</html>
